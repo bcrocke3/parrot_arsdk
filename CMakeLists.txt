@@ -21,7 +21,7 @@ set(ARSDK_ARCHIVE arsdk_3_14_0_p1_stripped.tgz)
 set(ARSDK_ARCHIVE_MD5 f73099c420dab7c1ad29a01b1df3ca3c)
 
 # Determine the architecure of the host in a robust way
-execute_process(COMMAND python ${PROJECT_SOURCE_DIR}/script/get_arch.py OUTPUT_VARIABLE BUILD_HOST_ARCH)
+execute_process(COMMAND python3 ${PROJECT_SOURCE_DIR}/script/get_arch.py OUTPUT_VARIABLE BUILD_HOST_ARCH)
 message(STATUS "Host architecure: ${BUILD_HOST_ARCH}")
 
 add_custom_target(ARSDK_MKDIR
